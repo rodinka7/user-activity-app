@@ -1,0 +1,22 @@
+{
+  "name": "user-activity-app",
+  "version": "1.0.0",
+  "description": "User activity test app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon NODE_ENV=development NODE_PORT=3000 server.js"
+  },
+  "author": "Tania V.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0",
+    "mongoose": "^5.9.6",
+    "uuid": "^7.0.2"
+  }
+}
