@@ -1,22 +1,31 @@
 {
   "name": "user-activity-app",
   "version": "1.0.0",
-  "description": "User activity test app",
+  "description": "User Activity Test App",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon NODE_ENV=development NODE_PORT=3000 server.js"
+    "start": "NODE_ENV=development NODE_PORT=3000 nodemon server.js"
   },
-  "author": "Tania V.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodinka7/user-activity-app.git"
+  },
+  "author": "Tania V/",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodinka7/user-activity-app/issues"
+  },
+  "homepage": "https://github.com/rodinka7/user-activity-app#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-graphql": "^0.9.0",
-    "graphql": "^14.6.0",
+    "http-errors": "^1.7.3",
     "mongoose": "^5.9.6",
+    "pg": "^7.18.2",
+    "pug": "^2.0.4",
     "uuid": "^7.0.2"
   }
 }

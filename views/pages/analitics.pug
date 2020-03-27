@@ -1,0 +1,34 @@
+extends ../_template
+
+block variables
+  - var title = 'Home Page'
+
+block header
+  include ../common/_header
+
+block content
+  .content
+    include ../common/_menu
+
+    .activity__container
+      .activity__title Analitics Data
+      .activity__filters To filter data press ENTER
+        .filter.user__filter User Id Filter 
+          input(type="text")
+        .filter.area__filter Area Filter 
+          input(type="text")
+      .activity__header
+        each field in activity_items
+          div= field
+      ul.activity__list
+        each item in activities
+          li.activity__item
+            div.uid= item.uid
+            div.area= item.area
+            div= item.timestamp
+      .pagination
+        a.first__btn(href=`#`) FIRST
+        a.prev__btn(href=`#`) PREV
+        a.curr__btn(href=`#`)
+        a.next__btn(href=`#`) NEXT
+        a.last__btn(href=`#`) LAST

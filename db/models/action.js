@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const actionModel = new Schema({
-    userId: {
+    uid: {
         type: String,
         required: true
     },
@@ -14,6 +14,6 @@ const actionModel = new Schema({
         type: Date,
         required: true
     }
-});
+}, { versionKey: false });
 
 module.exports = mongoose.model('Action', actionModel);

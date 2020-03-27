@@ -1,0 +1,18 @@
+extends ../_template
+
+block variables
+  - var title = 'Home Page'
+
+block header
+  include ../common/_header
+
+block content
+  .content
+    include ../common/_menu
+
+    .container
+      .sub__container.news
+        .title-name News Block
+      .sub__container.article
+          .title-name Article Block
+
